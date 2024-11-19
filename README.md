@@ -52,3 +52,38 @@ Next, click "Settings" on the newly created virtual machine, and go to the "Netw
 ![image](https://github.com/user-attachments/assets/f6184b9c-c928-4ee1-8d7e-aad7c26bda18) ![image](https://github.com/user-attachments/assets/32c584b5-f97c-408c-a4df-9602abb916ca)
 
 Once this is set, click "Ok" and start the virtual machine. 
+
+You will be asked to install pfSense upon starting the virtual machine.
+
+![image](https://github.com/user-attachments/assets/af30792c-6e06-4ddb-9367-5db527c3c7cd)
+
+Select the active WAN interface:
+
+![image](https://github.com/user-attachments/assets/14131ec0-88bb-42c2-a97a-314c77b451c1)
+
+Enter "OK" to continue. Select the remaining network interface to act as the LAN interface:
+
+![image](https://github.com/user-attachments/assets/c9e6bd6c-77f2-496d-9e00-3617e15d57a5)
+
+Press "CONTINUE" as you go along. Once you get to the part where it asks you if you want to destroy the current contents of the following disks, select "YES" as shown below:
+
+![image](https://github.com/user-attachments/assets/216da644-fab2-4a08-9d7b-530585ca7e12)
+
+Next, select the current stable release as the version for the pfSense CE to install:
+
+![image](https://github.com/user-attachments/assets/a4441e45-f271-4fe9-8d77-4cc5ddb073e1)
+
+Once it is installed, you can reboot the virtual machine:
+
+![image](https://github.com/user-attachments/assets/24ddda84-7e89-407c-81b1-854ebb736cc9)
+
+Next, remove the disk from the virtual drive:
+
+![image](https://github.com/user-attachments/assets/b86d17c0-40fb-4cef-b9b0-3b076ef3d0aa)
+
+This will finish the configuration. Once the configuration is finished, you will be given options to select from along with IP addresses of the WAN and LAN interfaces:
+
+![image](https://github.com/user-attachments/assets/f6347036-9868-4774-8ecd-11c6a38f27f4)
+
+
+
