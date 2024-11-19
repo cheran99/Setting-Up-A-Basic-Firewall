@@ -45,4 +45,10 @@ For hardware, set the base memory to 2GB and the processor to 1 CPU.
 
 Once all of this is set, click "Finish" to set up the virtual machine. 
 
+![image](https://github.com/user-attachments/assets/e37a48db-531b-410e-97af-a09b9b93c95f)
 
+Next, click "Settings" on the newly created virtual machine, and go to the "Network" section. For Adapter 1, select "NAT" as the adapter to act as the WAN connection to the internet. For Adapter 2, select "Internal Network" to act as a LAN connection. 
+
+![image](https://github.com/user-attachments/assets/f6184b9c-c928-4ee1-8d7e-aad7c26bda18) ![image](https://github.com/user-attachments/assets/32c584b5-f97c-408c-a4df-9602abb916ca)
+
+Once this is set, click "Ok" and start the virtual machine. 
