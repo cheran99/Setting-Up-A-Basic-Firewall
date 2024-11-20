@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The purpose of this project is to set up a basic firewall using pfSense. pfSense is a open source firewall tool that is user-friendly and great for beginners. The firewall will be used to let certain devices access the internet while blocking any unwanted traffic to enter the network.
+The purpose of this project is to set up a basic firewall using pfSense. pfSense is a open source firewall tool that is user-friendly and great for beginners. The firewall will be used to let certain devices access the internet while blocking any unwanted traffic to enter the local network.
 
 ### Objectives
 
@@ -47,13 +47,13 @@ Once all of this is set, click "Finish" to set up the virtual machine.
 
 ![image](https://github.com/user-attachments/assets/e37a48db-531b-410e-97af-a09b9b93c95f)
 
-Next, click "Settings" on the newly created virtual machine, and go to the "Network" section. For Adapter 1, select "NAT" as the adapter to act as the WAN interface to enable an internet connection. For Adapter 2, select "Internal Network" to act as a LAN interface. 
+Next, click "Settings" on the newly created virtual machine, and go to the "Network" section. For Adapter 1, select "NAT" or "Bridged Adapter" as the adapter to act as the WAN interface to enable an internet connection. For Adapter 2, select "Internal Network" to act as a LAN interface. 
 
 ![image](https://github.com/user-attachments/assets/f6184b9c-c928-4ee1-8d7e-aad7c26bda18) ![image](https://github.com/user-attachments/assets/32c584b5-f97c-408c-a4df-9602abb916ca)
 
 Once this is set, click "Ok" and start the virtual machine. 
 
-You will be asked to install pfSense upon starting the virtual machine.
+You will be asked to install pfSense when starting the virtual machine.
 
 ![image](https://github.com/user-attachments/assets/af30792c-6e06-4ddb-9367-5db527c3c7cd)
 
@@ -81,7 +81,7 @@ Next, remove the disk from the virtual drive:
 
 ![image](https://github.com/user-attachments/assets/b86d17c0-40fb-4cef-b9b0-3b076ef3d0aa)
 
-This will finish the configuration. Once the configuration is finished, you will be given options to select from along with IP addresses of the WAN and LAN interfaces:
+This will finish the configuration. Once the configuration is finished, you will be given options to select from along with the IP addresses of the WAN and LAN interfaces:
 
 ![image](https://github.com/user-attachments/assets/cfae67e0-045f-41ab-95d9-d3a1797445c1)
 
@@ -231,6 +231,10 @@ Now that many attempts to connect to the internet using devices within the local
 ![image](https://github.com/user-attachments/assets/bdea289b-ffb1-4a5c-ab52-3fc9b01aedae)
 
 As you can see in the traffic logs shown above, when a device from the local network attempts to connect to the internet such as searching for something random or entering a random website, the results show that the network traffic for this has successfully passed the firewall therefore allowing access to the internet without restrictions. However, when a device outside the local network attempts to connect to the local network by accessing the pfSense dashboard using the WAN IP address, the network traffic from the said device is blocked by the firewall from accessing the pfSense dashboard.  
+
+## Conclusion
+
+To summarise this entire project, the pfSense software was successfully implemented and configured in VirtualBox. This enabled devices that share the same LAN interface to access the internet and the pfSense dashboard without restrictions. Additionally, devices that are not part of the local network are blocked from accessing the pfSense dashboard as a result of the firewall rules set. As for how setting up firewalls impacts real-world scenarios, the implementation of firewalls serves as a critical layer of network security and acts as a preventative measure to ensure that no unwanted or malicious traffic enters the local network. This in turn also protects the firewall itself from external traffic. Furthermore, the firewall also allows devices within the local network to access the internet and external sources securely without any issues. 
 
 
 ## References
