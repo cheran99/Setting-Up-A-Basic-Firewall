@@ -83,7 +83,7 @@ Next, remove the disk from the virtual drive:
 
 This will finish the configuration. Once the configuration is finished, you will be given options to select from along with IP addresses of the WAN and LAN interfaces:
 
-![image](https://github.com/user-attachments/assets/f6347036-9868-4774-8ecd-11c6a38f27f4)
+![image](https://github.com/user-attachments/assets/cfae67e0-045f-41ab-95d9-d3a1797445c1)
 
 Minimise the window for the pfSense VM. On VirtualBox, click on the Kali VM, then go to "Settings", and then to "Network". Select "Internal Network" as the adapter as shown below:
 
@@ -218,18 +218,19 @@ Now that this is set, let's restart the machine. Once you are logged in, open th
 
 As shown above, the attempt to access the pfSense dashboard failed. Let's try accessing the pfSense dashboard using the IP address for the WAN interface:
 
-![image](https://github.com/user-attachments/assets/23dae954-7e4d-4290-8d9b-32bca380c4af)
+![image](https://github.com/user-attachments/assets/4f53a802-31ef-4325-b8b2-0a0a3cc6a172)
 
 The attempt to access the dashboard through the IP address of the WAN interface also failed. This shows that external traffic entering the local network has successfully been blocked. When you ping the WAN IP address from the external device, it says "Request timed out" meaning that the pinging failed:
 
-![image](https://github.com/user-attachments/assets/66d18481-7a58-48cd-9272-46b79c94ab0d)
+![image](https://github.com/user-attachments/assets/877c2045-d342-45ec-9ced-7f18d29f1a0b)
 
 ### Step 5: Monitor The Logs
 
 Now that many attempts to connect to the internet using devices within the local network have been successful along with attempts to access the pfSense dashboard from external devices successfully being blocked, you can review the traffic logs that show all inbound and outbound traffic along with which traffic has been blocked or allowed. To view these logs, go to "Status", then to "System Logs", then go to the "Firewall" tab. This will show the traffic logs based on the firewall rules that were set earlier:
 
+![image](https://github.com/user-attachments/assets/bdea289b-ffb1-4a5c-ab52-3fc9b01aedae)
 
-
+As you can see in the traffic logs shown above, when a device from the local network attempts to connect to the internet such as searching for something random or entering a random website, the results show that the network traffic for this has successfully passed the firewall therefore allowing access to the internet without restrictions. The traffic logs also show that when a device outside the local network attempts to connect to the local network by accessing the pfSense dashboard using the WAN IP address, the network traffic from the said device is blocked by the firewall from accessing the pfSense dashboard which is in the local network.  
 
 
 ## References
