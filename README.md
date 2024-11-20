@@ -230,7 +230,7 @@ Now that many attempts to connect to the internet using devices within the local
 
 ![image](https://github.com/user-attachments/assets/bdea289b-ffb1-4a5c-ab52-3fc9b01aedae)
 
-As you can see in the traffic logs shown above, when a device from the local network attempts to connect to the internet such as searching for something random or entering a random website, the results show that the network traffic for this has successfully passed the firewall therefore allowing access to the internet without restrictions. However, when a device outside the local network attempts to connect to the local network by accessing the pfSense dashboard using the WAN IP address, the network traffic from the said device is blocked by the firewall from accessing the pfSense dashboard which is in the local network.  
+As you can see in the traffic logs shown above, when a device from the local network attempts to connect to the internet such as searching for something random or entering a random website, the results show that the network traffic for this has successfully passed the firewall therefore allowing access to the internet without restrictions. However, when a device outside the local network attempts to connect to the local network by accessing the pfSense dashboard using the WAN IP address, the network traffic from the said device is blocked by the firewall from accessing the pfSense dashboard.  
 
 
 ## References
