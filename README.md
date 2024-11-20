@@ -198,7 +198,16 @@ Let's use another virtual machine with the same LAN interface to see if the inte
 
 ![image](https://github.com/user-attachments/assets/ca1b2e3b-6f72-4b1b-bbcb-933e9e6fc0f5)
 
-Start the virtual machine and log in using your credentials. 
+Start the virtual machine and log in using your credentials. Open the web browser in this virtual machine and search for something random:
+
+![image](https://github.com/user-attachments/assets/6f01f7e0-8f3b-4c52-ab77-45a4bb25aa62)
+
+As shown above, the internet connection is successful. In the same virtual machine, let's try logging in to the pfSense dashboard using the LAN IP address along with the default credentials:
+
+![image](https://github.com/user-attachments/assets/ede3add8-5353-4f3c-93ab-5cd875251cfa)
+
+As shown above, access to the pfSense dashboard is successful. 
+
 
 
 ## References
