@@ -127,7 +127,7 @@ Continue clicking "Next" over the following pages and leave everything else to i
 
 Once the setup wizard is complete, click "Finish" and this will take you to the dashboard which displays the system information about the pfSense virtual machine along with the network interfaces used:
 
-![image](https://github.com/user-attachments/assets/7e7dd8c1-720a-4265-b035-17b03dd1d2ca)
+![image](https://github.com/user-attachments/assets/988ae565-775c-4e6f-a937-3ef97ccfa8a6)
 
 To check if the internet connection is working, just search for something random and if it gives results, the internet connection is working. As shown below, the internet connection is working:
 
@@ -160,7 +160,7 @@ Destination: Any
 Description (optional): Allow LAN to WAN
 ```
 
-![image](https://github.com/user-attachments/assets/aae7695b-c828-4617-8cd4-5fb2ace6c8b1)
+![image](https://github.com/user-attachments/assets/65347d50-2133-4edf-b8ad-08559ea62126)
 
 Once the configuration is set, click "Save". This will ensure that the devices in the local network can access the internet and external sources easily.
 
@@ -180,7 +180,7 @@ Destination: LAN subnets
 Description (optional): Block WAN to LAN
 ```
 
-![image](https://github.com/user-attachments/assets/a8a8f27c-51a1-4ade-b16b-5bdd612cb2bf)
+![image](https://github.com/user-attachments/assets/7db2a893-877f-4cfb-96f3-dff0c59baf0c)
 
 Click "Save". This will prevent any unwanted traffic from entering the local network. Next, click "Apply changes" for the rules to take effect:
 
