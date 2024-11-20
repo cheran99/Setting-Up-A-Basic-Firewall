@@ -208,9 +208,32 @@ As shown above, the internet connection is successful. In the same virtual machi
 
 As shown above, access to the pfSense dashboard is successful. 
 
+To test if a device from an external network is blocked from accessing the local network, let's use a virtual machine that is external to the local network. This time, the network adapter for the Windows virtual machine used earlier will be changed to "Bridged Adapter":
+
+![image](https://github.com/user-attachments/assets/08b2d286-06d9-43fe-8340-5cbb4a5e5956)
+
+Now that this is set, let's restart the machine. Once you are logged in, open the web browser in the virtual machine and log in to the pfSense dashboard using the LAN IP address:
+
+![image](https://github.com/user-attachments/assets/41fce301-481e-49eb-a2ea-eb417fb740df)
+
+As shown above, the attempt to access the pfSense dashboard failed. Let's try accessing the pfSense dashboard using the IP address for the WAN interface:
+
+![image](https://github.com/user-attachments/assets/23dae954-7e4d-4290-8d9b-32bca380c4af)
+
+The attempt to access the dashboard through the IP address of the WAN interface also failed. This shows that external traffic entering the local network has successfully been blocked. When you ping the WAN IP address from the external device, it says "Request timed out" meaning that the pinging failed:
+
+![image](https://github.com/user-attachments/assets/66d18481-7a58-48cd-9272-46b79c94ab0d)
+
+### Step 5: Monitor The Logs
+
+Now that many attempts to connect to the internet using devices within the local network have been successful along with attempts to access the pfSense dashboard from external devices successfully being blocked, you can review the traffic logs that show all inbound and outbound traffic along with which traffic has been blocked or allowed. To view these logs, go to "Status", then to "System Logs", then go to the "Firewall" tab. This will show the traffic logs based on the firewall rules that were set earlier:
+
+
+
 
 
 ## References
 
 - https://youtu.be/XU5IvWW6luk?si=CmMwl6ObwH0AkaS9
+- https://www.youtube.com/watch?v=ZYLULVIwC0k 
 
