@@ -11,6 +11,8 @@ The purpose of this project is to set up a basic firewall using pfSense. pfSense
 - Set up basic firewall rules
 - Test the firewall rules and monitor traffic logs
 
+![Firewall](https://github.com/user-attachments/assets/11763141-d207-47d5-9752-e007a127a0de)
+
 ## Methodology 
 
 ### Step 1: Install pfSense To Your Machine
